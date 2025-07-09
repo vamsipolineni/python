@@ -44,4 +44,3 @@ coverage.xml
 .tox/
 pytest_cache/
 .pytest_cache/
-
