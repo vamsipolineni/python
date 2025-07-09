@@ -3,13 +3,9 @@ from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
-source_path = "//img[@alt='The peaks of High Tatras']"
-target_path = "//div[@id='trash']"
-frame_ele = "//iframe[@class='demo-frame lazyloaded']"
-
 driver = webdriver.Chrome()
 try:
-    url = "https://www.globalsqa.com/demo-site/draganddrop/"
+    url = "https://formy-project.herokuapp.com/dragdrop
     print("navigating to webpage...")
     driver.get(url)
     print("maximizing window....")
@@ -24,6 +20,8 @@ try:
     action = ActionChains(driver)
     action.drag_and_drop(source_ele, target_ele).perform()
     print("dragged and dropped successfully....")
+except Exception as e:
+    print(e)
     time.sleep(4)
 except Exception as es:
     print(es)
