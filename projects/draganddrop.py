@@ -18,7 +18,7 @@ try:
     action.drag_and_drop(source_ele, target_ele).perform()
     time.sleep(5)
     print("dragged and dropped successfully....")
-except Exception as es:
-    print(es)
+except Exception as e:
+    print(e)
 finally:
     driver.quit()
