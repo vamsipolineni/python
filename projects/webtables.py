@@ -31,4 +31,4 @@ for row in row_ele:
     cell_path = row.find_elements(By.TAG_NAME, 'td')
     data = [cell.text for cell in cell_path]
     print(data)
-    time.sleep(1)
+    time.sleep(2)
